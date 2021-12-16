@@ -2,6 +2,7 @@
 //
 //  10    9   8
 //  10    5   5
+
 1.  Inicio
 2.  (notasEstudiantes(2)(3),i[1-n])
 3.  fila, i[0-n]
@@ -10,12 +11,18 @@
 6.  suma, i[0-n]
 7.  suma <-- 0
 8.  notasEstudiantes <-- {{10, 9, 8}, {10, 5, 5}}
-9.  Para(fila<--0, fila<2, 1) haga
-10.   Para(columna<--0, columna<3, 1) haga
-11.     Si fila == columna entonces
+9.  Para(fila<--0, fila<2, 1) haga // 0<2=V // 1<2=V // 2<2=F
+10.   Para(columna<--0, columna<3, 1) haga // 0<3=V // 1<3=V // 2<3=V // 3<3=F
+
+11.     Si fila == columna entonces // 0==0=V // 0==1=F // 0==2=F // 
+				    // 1==0=F // 1==1=V // 1==2=F //
+				
 12.       suma <-- suma + notasEstudiantes[fila][columna] 
+				// 0  + notasEstudiantes[0][0] = 0+10=10
+				// 10 + notasEstudiantes[1][1] = 10+5=15
 13.     Fin Si
 14.   Fin_Para 
 15. Fin_Para 
-16. Fin
+16. Escribir suma // 15
+17. Fin
 

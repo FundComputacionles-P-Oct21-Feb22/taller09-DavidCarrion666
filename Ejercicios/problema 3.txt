@@ -1,0 +1,34 @@
+9  (0,0)	10  (0,1)	7  (0,2)	8 (0,3)
+10 (1,0) 	5   (1,1)	7  (1,2)  	9 (1,3)
+7  (2,0)        9.4 (2,1)       10 (2,2)	9 (2,3)
+--------------------------------------------------------------
+Jerry Ponce	Gabriela Lewis 	    David Bell
+--------------------------------------------------------------
+
+1. Inicio
+
+2. (notas (3)(4), i[0, n])
+3. suma, d[0, n] <-- 0
+4. promedio_notas, d[0, n]
+5. (promedio (3), i[0, n])
+6. (Estudiantes (3), x(50)[{a-z}, {A-Z}, {BS}])
+7. fila, i[0, n]
+8. columna, i[0, n]
+
+9. notas <-- {{9, 10, 7, 8}, {10, 5, 7, 9}, {7, 9.4, 10, 9}}
+10. Estudiantes <-- {"Jerry Ponce", "Gabriela Lewis", "David Bell"}
+
+11. Para (fila <-- 0, fila < 3, 1) haga
+
+12.     Para (columna <-- 0, columna < 4, 1) haga
+13. 	  suma <-- suma + notas[fila][columna]
+14.     Fin_Para
+
+15. promedio_notas <-- suma / 4
+16. suma <-- 0
+17. promedio[fila] <-- promedio_notas
+	
+18. Escribir "Estudiante:" + "Estudiantes[fila] + "Tiene un promedio de" + promedio[fila]
+19. Fin_Para
+
+20. Fin
